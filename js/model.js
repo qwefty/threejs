@@ -109,7 +109,7 @@ function loadModel(data) {
                 object.geometry.rotateX(Math.PI);
             }
             useModel();
-        }, 1000);
+        }, 1);
     });
 }
   
