@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Threejs上传加载PCD点云</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body>
+	<div class="div-panel">
+		<div class="div-panels">
+			<dl>
+				<dt>示例</dt>
+				<dd>
+					<button id="btn_pcd1" class="btn">古楼</button>
+					<button id="btn_pcd3" class="btn">兔子</button>
+					<button id="btn_pcd2" class="btn">人面</button>
+				</dd>
+			</dl>
+
+		</div>
+
+		<div class="div-panels">
+			<dl>
+				<dd>
+					<input id="file" type="file" name="myfile" />
+				</dd>
+				<dd>
+					<input id="btn_pcdload" type="button" onclick="upladFile()" value="上传PCD" class="btn" />
+				</dd>
+			</dl>
+
+		</div>
+
+	</div>
+
+	<div id="div_canvas" class="div-canvas"></div>
+
+	<canvas id="mainCanvas" style="display: none;"></canvas>
+
+	<script src="./lib/three.js"></script>
+	<script src="./lib/OrbitControls.js"></script>
+	<!-- <script src="./lib/FirstPersonControls.js"></script> -->
+	<script src="./lib/PCDLoader.js"></script>
+
+	<script src="./lib/jquery-1.10.2.min.js"></script>
+
+	<script src="./js/scene.js"></script>
+	<script src="./js/model.js"></script>
+</body>
+
+</html>
